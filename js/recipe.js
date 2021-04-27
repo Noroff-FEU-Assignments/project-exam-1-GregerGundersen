@@ -17,6 +17,7 @@ fetch(recipeUrl)
 const displayRecipe = (data) => {
   console.log(data);
   let content = `
+        <a href="https://projectexam.netlify.app/index.html">Back home</a>
         <h2>${data.title.rendered}</h2>
       `;
   recipeOut.innerHTML = content;
