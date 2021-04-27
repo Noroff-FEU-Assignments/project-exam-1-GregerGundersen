@@ -22,7 +22,7 @@ const displayRecipes = (recipes) => {
     // console.log(product);
     recipeList += `
         <div>
-            <a href="http://dionysus.no/projectexam/product.html?id=${recipe.id}"><h2>${recipe.title.rendered}</h2></a>
+            <a href="https://projectexam.netlify.app/recipe.html?id=${recipe.id}"><h2>${recipe.title.rendered}</h2></a>
             ${recipe.excerpt.rendered}
             ${recipe.content.rendered}
         </div>
