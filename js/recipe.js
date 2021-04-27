@@ -1,6 +1,6 @@
 const queryString = window.location.search;
 const id = new URLSearchParams(queryString).get("id");
-const recipeOut = document.querySelector("div.product");
+const recipeOut = document.querySelector("div.recipe");
 const title = document.querySelector("title");
 
 const recipeUrl = `https://dionysus.no/projectexam/wp-json/wp/v2/posts/${id}`;
