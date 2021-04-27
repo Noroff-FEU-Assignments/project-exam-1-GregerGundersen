@@ -1,7 +1,5 @@
-const url = "http://dionysus.no/projectexam/wp-json/wp/v2/posts";
+const url = "https://dionysus.no/projectexam/wp-json/wp/v2/posts";
 const recipesOut = document.querySelector("div.test");
-
-console.log(url);
 
 fetch(url)
   .then((response) => response.json())
@@ -10,7 +8,7 @@ fetch(url)
     displayRecipes(data);
   })
   .catch((error) => {
-    // console.error("Error:", error);
+    console.error("Error:", error);
     recipesOut.innerHTML = `
     <div id="error">
     <h2 >Error:</h2>

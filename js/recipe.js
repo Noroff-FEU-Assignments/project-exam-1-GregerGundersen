@@ -3,7 +3,7 @@ const id = new URLSearchParams(queryString).get("id");
 const recipeOut = document.querySelector("div.product");
 const title = document.querySelector("title");
 
-const recipeUrl = `http://dionysus.no/projectexam/wp-json/wp/v2/posts/${id}`;
+const recipeUrl = `https://dionysus.no/projectexam/wp-json/wp/v2/posts/${id}`;
 fetch(recipeUrl)
   .then((response) => response.json())
   .then((data) => {
