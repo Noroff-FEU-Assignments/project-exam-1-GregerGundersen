@@ -18,7 +18,11 @@ const displayRecipe = (data) => {
   console.log(data);
   let content = `
         <a href="https://projectexam.netlify.app/index.html">Back home</a>
-        <h2>${data.title.rendered}</h2>
+        <div class="recipe">
+          <h2>${data.title.rendered}</h2>
+          ${data.excerpt.rendered}
+          ${data.content.rendered}
+
       `;
   recipeOut.innerHTML = content;
   title.innerHTML = "StudentMat | ";
