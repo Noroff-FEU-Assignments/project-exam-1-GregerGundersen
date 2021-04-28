@@ -1,5 +1,5 @@
 const url = "https://dionysus.no/projectexam/wp-json/wp/v2/posts";
-const recipesOut = document.querySelector("div.test");
+const recipesOut = document.querySelector("div.recipes");
 
 fetch(url)
   .then((response) => response.json())
@@ -21,10 +21,9 @@ const displayRecipes = (recipes) => {
   for (let recipe of recipes) {
     // console.log(product);
     recipeList += `
-        <div>
+        <div class="recipeblock">
             <a href="https://projectexam.netlify.app/recipe.html?id=${recipe.id}"><h2>${recipe.title.rendered}</h2></a>
             ${recipe.excerpt.rendered}
-            ${recipe.content.rendered}
         </div>
         `;
   }

@@ -25,5 +25,5 @@ const displayRecipe = (data) => {
 
       `;
   recipeOut.innerHTML = content;
-  title.innerHTML = "StudentMat | ";
+  title.innerHTML = `StudentMat | ${data.title.rendered}`;
 };

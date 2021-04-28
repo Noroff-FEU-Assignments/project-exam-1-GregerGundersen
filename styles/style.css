@@ -1,0 +1,12 @@
+body {
+  margin: 0rem 10rem;
+}
+
+/* Home Page */
+
+.recipes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  background-color: lightgrey;
+}
