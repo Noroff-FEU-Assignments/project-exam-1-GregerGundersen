@@ -21,10 +21,10 @@ const displayRecipes = (recipes) => {
   for (let recipe of recipes) {
     // console.log(product);
     recipeList += `
-        <div class="recipeblock">
-            <a href="https://projectexam.netlify.app/recipe.html?id=${recipe.id}"><h2>${recipe.title.rendered}</h2></a>
-            ${recipe.excerpt.rendered}
-        </div>
+        <a href="https://projectexam.netlify.app/recipe.html?id=${recipe.id}" class="recipeblock">
+          <h2>${recipe.title.rendered}</h2>
+          ${recipe.excerpt.rendered}
+        </a>
         `;
   }
   recipesOut.innerHTML = recipeList;

@@ -1,12 +1,65 @@
+:root {
+  --maincolor: #fd8664;
+}
+
 body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  margin: 0;
+}
+
+main {
   margin: 0rem 10rem;
 }
 
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.headerlogo {
+  height: 3rem;
+  align-self: center;
+  margin-left: 1rem;
+}
+
+.headerleft {
+  display: flex;
+}
+
+/* Navigation */
+
+.navbar {
+  display: flex;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #707070;
+  align-self: center;
+  padding: 0.8rem;
+}
+
+#shoppinglist {
+  background: var(--maincolor);
+}
+
+.fa-list-ul {
+  background: var(--maincolor);
+  color: white;
+  padding: 0.8rem;
+  font-size: 2rem;
+}
 /* Home Page */
 
 .recipes {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1rem;
-  background-color: lightgrey;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.recipeblock {
+  text-decoration: none;
+  color: black;
+  width: 24rem;
 }
