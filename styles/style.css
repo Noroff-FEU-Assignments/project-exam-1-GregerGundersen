@@ -19,7 +19,7 @@ header {
 }
 
 .headerlogo {
-  height: 3rem;
+  height: 3.5rem;
   align-self: center;
   margin-left: 1rem;
 }
@@ -53,13 +53,75 @@ header {
 }
 /* Home Page */
 
+/* Recipes */
 .recipes {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
 
 .recipeblock {
   text-decoration: none;
   color: black;
-  width: 24rem;
+}
+
+.recipeimagecontainer {
+  width: 200px;
+  height: 200px;
+}
+
+.recipeimagecontainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Footer */
+footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: var(--maincolor);
+  color: white;
+  padding: 1rem;
+}
+
+.footercontact {
+  /* padding: 1rem; */
+  border-right: 1px solid white;
+}
+
+footer h2,
+footer p {
+  margin: 0;
+}
+
+footer h2 {
+  font-size: 1rem;
+}
+
+footer p {
+  font-size: 0.8rem;
+}
+
+/* .footerlogo {
+  display: flex;
+}
+
+.footerlogo img {
+  height: 3.5rem;
+  align-self: center;
+  color: white;
+  margin-left: 1rem;
+}
+ */
+.footersocial {
+  display: flex;
+  justify-content: center;
+  border-left: 1px solid white;
+}
+
+.footersocial i {
+  font-size: 2rem;
+  align-self: center;
+  margin: 0 1.5rem;
 }
