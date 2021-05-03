@@ -125,3 +125,51 @@ footer p {
   align-self: center;
   margin: 0 1.5rem;
 }
+
+/* About page */
+
+#about {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#about h2 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 300;
+  color: #707070;
+}
+
+#about p {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+
+.contactlink {
+  color: var(--maincolor);
+}
+
+/* Contact page */
+
+#contact {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#contact h2 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 300;
+  color: #707070;
+}
+
+#contact p {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1rem;
+  text-align: center;
+}
