@@ -11,12 +11,54 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/8959b83462.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
+    <header>
+      <div class="headerleft">
+        <a class="logolink" href="index.html">
+          <img
+            src="./media/PSLogo.png"
+            alt="StudentMat logo"
+            class="headerlogo"
+          />
+        </a>
+        <!-- <input type="text" class="headersearch" /> ENABLE WHEN SEARCHBAR IN FUNCTIONAL-->
+      </div>
+      <div class="navbar">
+        <a href="index.html" class="active">HJEM</a>
+        <a href="./recipes.html">OPPSKRIFTER</a>
+        <a href="./about.html">OM OSS</a>
+        <a href="./contact.html">KONTAKT</a>
+        <a href="index.html" id="shoppinglist"
+          ><i class="fas fa-list-ul"></i
+        ></a>
+      </div>
+    </header>
     <div class="recipe">
       <div class="loadingcontainer">
         <img class="loadingindicator" src="./media/ringssvgloader.svg" />
       </div>
+    </div>
+    <div class="footerwrapper">
+      <footer>
+        <div class="footercontact">
+          <a href="contact.html">Kontakt Oss</a>
+          <p>Har du spørsmål eller tilbakemelding?</p>
+          <p>Skriv til oss via kontaktskjemaet på siden.</p>
+        </div>
+        <div class="footerlogo">
+          <img src="media/PSLogoFooter.png" class="footerlogo" />
+        </div>
+        <div class="footersocial">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-twitter"></i>
+        </div>
+      </footer>
     </div>
     <script src="js/recipe.js"></script>
   </body>
