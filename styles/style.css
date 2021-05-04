@@ -20,8 +20,11 @@ header {
 
 .headerlogo {
   height: 3.5rem;
-  align-self: center;
   margin-left: 1rem;
+}
+
+.logolink {
+  align-self: center;
 }
 
 .headerleft {
@@ -51,6 +54,10 @@ header {
   padding: 0.8rem;
   font-size: 2rem;
 }
+
+.active {
+  border-bottom: 1px solid var(--maincolor);
+}
 /* Home Page */
 
 /* Recipes */
@@ -63,6 +70,13 @@ header {
 .recipeblock {
   text-decoration: none;
   color: black;
+  margin: 0.5rem 1rem;
+  max-width: 20rem;
+}
+
+.recipeblock h2 {
+  font-weight: 400;
+  font-size: 1rem;
 }
 
 .recipeimagecontainer {

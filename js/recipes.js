@@ -11,21 +11,17 @@ fetch(mediaUrl)
 function displayMedia(recipes) {
   for (let recipe of recipes) {
     console.log(recipe);
-    let id = recipe.id;
     let imgSrc =
       recipe._embedded["wp:featuredmedia"][0].media_details.sizes.medium
         .source_url;
     let altText = recipe._embedded["wp:featuredmedia"][0].alt_text;
     recipesOut.innerHTML += `
-                            <a href="https://projectexam.netlify.app/recipe.html/?id=${id}"
                             <div class="recipeblock">
                               <div class="recipeimagecontainer">
                                 <img src="${imgSrc}" alt="${altText}"></img>
                               </div>
                               <h2>${recipe.title.rendered}</h2>
 
-                            </div>
-                            </a>`;
+                            </div>`;
   }
 }
-/* style = "background-image:url('${imgSrc}')"; */
