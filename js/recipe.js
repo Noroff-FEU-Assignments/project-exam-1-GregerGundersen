@@ -3,11 +3,10 @@ const id = new URLSearchParams(queryString).get("id");
 const recipeOut = document.querySelector("div.recipe");
 const title = document.querySelector("title");
 
-const recipeUrl = `https://dionysus.no/projectexam/wp-json/wp/v2/posts/${id}`;
+const recipeUrl = `https://dionysus.no/projectexam/wp-json/wp/v2/posts/${id}?_embed=wp:featuredmedia`;
 fetch(recipeUrl)
   .then((response) => response.json())
   .then((data) => {
-    console.log("Success:", data);
     displayRecipe(data);
   })
   .catch((error) => {

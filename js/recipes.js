@@ -9,6 +9,7 @@ fetch(mediaUrl)
   .catch((error) => console.error("Error: " + error));
 
 function displayMedia(recipes) {
+  recipesOut.innerHTML = "";
   for (let recipe of recipes) {
     // console.log(recipe);
     let id = recipe.id;

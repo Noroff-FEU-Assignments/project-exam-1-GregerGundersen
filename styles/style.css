@@ -12,8 +12,14 @@ main {
   margin: 0rem 10rem;
 }
 
+.loadingcontainer {
+  grid-column: 2/4;
+  justify-content: center;
+  margin: 0 auto;
+}
+
 .loadingindicator {
-  color: black;
+  height: 15rem;
 }
 
 /* Header */
