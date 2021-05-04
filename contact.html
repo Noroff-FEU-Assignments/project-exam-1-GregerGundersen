@@ -39,6 +39,39 @@
       <h2>Kontakt oss</h2>
       <p>Har du spørsmål eller tilbakemeldinger til siden?</p>
       <p>Send oss en melding!</p>
+      <form id="contactform">
+        <div>
+          <input type="text" id="name" name="name" placeholder="Navn" />
+          <span id="nameErr"></span>
+        </div>
+        <div>
+          <input type="email" id="email" name="email" placeholder="E-Mail" />
+          <span id="emailErr"></span>
+        </div>
+        <div>
+          <input type="text" id="subject" name="subject" placeholder="Emne" />
+          <span id="subjectErr"></span>
+        </div>
+        <div>
+          <!-- <input
+            type="text"
+            id="message"
+            name="message"
+            placeholder="Message"
+          /> -->
+          <textarea
+            type="text"
+            id="message"
+            name="message"
+            placeholder="Melding"
+          ></textarea>
+          <span id="messageErr"></span>
+        </div>
+        <div>
+          <button type="submit">Send<i class="fas fa-paper-plane"></i></button>
+        </div>
+      </form>
+      <script src="js/contact.js"></script>
     </main>
   </body>
   <div class="footerwrapper">

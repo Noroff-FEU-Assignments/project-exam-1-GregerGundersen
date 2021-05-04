@@ -154,6 +154,10 @@ footer p {
 
 /* Contact page */
 
+#contactform {
+  margin-left: 19rem;
+}
+
 #contact {
   max-width: 1000px;
   margin: 0 auto;
@@ -172,4 +176,34 @@ footer p {
   margin-right: auto;
   font-size: 1rem;
   text-align: center;
+}
+
+input[type="text"],
+input[type="email"],
+#contactform textarea {
+  box-sizing: border-box;
+  padding: 0.2rem;
+  width: 24.5rem;
+  margin: 0.8rem 0 0.2rem 0;
+}
+
+#contactform span {
+  display: block;
+  font-size: 0.7rem;
+  margin: 0;
+  line-height: 0.5rem;
+  color: red;
+}
+
+#contactform textarea {
+  height: 7rem;
+}
+
+button[type="submit"] {
+  margin: 0.2rem 0;
+  background: var(--maincolor);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
 }
