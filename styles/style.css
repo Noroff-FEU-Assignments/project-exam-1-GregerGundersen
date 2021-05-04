@@ -12,6 +12,10 @@ main {
   margin: 0rem 10rem;
 }
 
+.loadingindicator {
+  color: black;
+}
+
 /* Header */
 header {
   display: flex;
@@ -35,17 +39,19 @@ header {
 
 .navbar {
   display: flex;
+  margin-bottom: 1rem;
 }
 
 .navbar a {
   text-decoration: none;
   color: #707070;
   align-self: center;
-  padding: 0.8rem;
+  padding: 1.8rem;
 }
 
 #shoppinglist {
   background: var(--maincolor);
+  padding: 0.6rem;
 }
 
 .fa-list-ul {
@@ -111,8 +117,27 @@ footer {
 }
 
 .footercontact {
-  /* padding: 1rem; */
   border-right: 1px solid white;
+}
+
+.footercontact a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+}
+
+.footercontact a:after {
+  border-bottom: 2px solid white;
+  transition: 0.2s;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+}
+
+.footercontact a:hover:after {
+  width: 100%;
 }
 
 footer h2,
@@ -128,17 +153,15 @@ footer p {
   font-size: 0.8rem;
 }
 
-/* .footerlogo {
+.footerlogo {
   display: flex;
 }
 
 .footerlogo img {
   height: 3.5rem;
-  align-self: center;
-  color: white;
-  margin-left: 1rem;
+  margin: auto;
 }
- */
+
 .footersocial {
   display: flex;
   justify-content: center;
@@ -151,6 +174,64 @@ footer p {
   margin: 0 1.5rem;
 }
 
+.fa-instagram {
+  background: -webkit-linear-gradient(
+    45deg,
+    #405de6,
+    #5851db,
+    #833ab4,
+    #c13584,
+    #e1306c,
+    #fd1d1d
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200%;
+  transition: 0.5s;
+}
+
+.fa-instagram:hover {
+  transform: scale(1.08);
+  background-position: right center;
+}
+
+.fa-facebook {
+  background: -webkit-linear-gradient(120deg, #3b5998, #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 0.5s;
+  background-size: 200%;
+}
+
+.fa-facebook:hover {
+  background-position: right center;
+  transform: scale(1.08);
+}
+
+.fa-twitter {
+  background: -webkit-linear-gradient(
+    45deg,
+    #66757f,
+    #00acee,
+    #36d8ff,
+    #f5f8fa,
+    #ffffff
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 0.5s;
+  background-size: 200%;
+}
+
+.fa-twitter:hover {
+  background-position: right center;
+  transform: scale(1.08);
+}
 /* About page */
 
 #about {
@@ -180,12 +261,20 @@ footer p {
 /* Contact page */
 
 #contactform {
-  margin-left: 19rem;
+  text-align: center;
 }
 
 #contact {
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 0 25rem 2rem 25rem;
+  /* border: 0.5px solid #707070; */
+}
+
+#contact:focus-within {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transform: scale(1.03);
+  transition: ease-in-out;
+  transition-duration: 0.25s;
 }
 
 #contact h2 {
@@ -231,4 +320,9 @@ button[type="submit"] {
   border: none;
   padding: 0.5rem 1rem;
   font-size: 1.5rem;
+}
+
+#message {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
 }
