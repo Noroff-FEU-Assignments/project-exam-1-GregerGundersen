@@ -14,7 +14,7 @@ function displayMedia(recipes) {
     // console.log(recipe);
     let id = recipe.id;
     let imgSrc =
-      recipe._embedded["wp:featuredmedia"][0].media_details.sizes.medium
+      recipe._embedded["wp:featuredmedia"][0].media_details.sizes.full
         .source_url;
     let altText = recipe._embedded["wp:featuredmedia"][0].alt_text;
     recipesOut.innerHTML += `
