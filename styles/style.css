@@ -342,6 +342,8 @@ button[type="submit"] {
   display: grid;
   grid-template-areas:
     "image  image"
+    "header header"
+    "excrpt excrpt"
     "ingred instr";
 }
 
@@ -358,11 +360,13 @@ button[type="submit"] {
   font-weight: 300;
   color: #707070;
   text-align: center;
+  grid-area: header;
 }
 
 .recipe p {
   font-size: 1.3rem;
   margin: 0 auto;
+  grid-area: excrpt;
 }
 
 .recipe img {
