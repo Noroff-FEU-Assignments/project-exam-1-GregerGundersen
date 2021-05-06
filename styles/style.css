@@ -334,3 +334,6 @@ button[type="submit"] {
 }
 
 /* Specific Recipe Page */
+.recipe {
+  display: grid;
+}
