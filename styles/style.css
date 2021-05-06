@@ -337,13 +337,3 @@ button[type="submit"] {
 .recipe {
   /* display: grid; */
 }
-
-.loadingcontainer {
-  display: block;
-  width: 50%;
-  margin: 0 auto;
-}
-
-.loadingindicator {
-  margin: 0 auto;
-}
