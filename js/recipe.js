@@ -41,4 +41,10 @@ const displayRecipe = (data) => {
   console.log(instrHeader);
   const instrList = document.querySelector(".recipecontainer ol");
   console.log(instrList);
+
+  const instrContainer = document.createElement("div");
+  instrContainer.classList.add("instrcontainer");
+  instrHeader.parentNode.insertBefore(instrContainer, instrHeader);
+  instrContainer.appendChild(instrHeader);
+  instrContainer.appendChild(instrList);
 };
