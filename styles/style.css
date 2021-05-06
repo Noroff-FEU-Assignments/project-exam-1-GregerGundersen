@@ -339,6 +339,12 @@ button[type="submit"] {
   margin: 0 10rem;
 }
 
+.recipe h2 {
+  font-size: 3rem;
+  color: #707070;
+  text-align: center;
+}
+
 .recipe img {
   object-fit: cover;
   width: 100%;
