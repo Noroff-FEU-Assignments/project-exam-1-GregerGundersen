@@ -375,7 +375,9 @@ button[type="submit"] {
   grid-area: image;
 }
 
-.ingredcontainer li {
+.ingredcontainer li,
+.ingredcontainer ul,
+.ingredcontainer {
   text-decoration: none;
 }
 
