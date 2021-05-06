@@ -27,7 +27,7 @@ const displayRecipe = (data) => {
 
   /* Test */
   const ingredHeader = document.querySelector(
-    ".recipedontainer h2:first-of-type"
+    ".recipedontainer h2:firstOfType"
   );
   console.log(ingredHeader);
 };
