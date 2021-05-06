@@ -29,9 +29,12 @@ const displayRecipe = (data) => {
   const ingredHeader = document.querySelector(
     ".recipecontainer h2:first-of-type"
   );
+  const ingredList = document.querySelector(".recipecontainer ul");
+  console.log(ingredList);
 
   const ingredContainer = document.createElement("div");
   ingredContainer.classList.add("ingredcontainer");
   ingredHeader.parentNode.insertBefore(ingredContainer, ingredHeader);
   ingredContainer.appendChild(ingredHeader);
+  ingredContainer.appendChild();
 };
