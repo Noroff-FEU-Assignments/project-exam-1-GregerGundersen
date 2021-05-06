@@ -18,7 +18,7 @@ const displayRecipe = (data) => {
   let content = `
         <div class="recipe">
           <img src="${data._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url}" alt="${data._embedded["wp:featuredmedia"][0].alt_text}">
-          <h2>${data.title.rendered}</h2>
+          <h1>${data.title.rendered}</h1>
           ${data.excerpt.rendered}
           ${data.content.rendered}
       `;

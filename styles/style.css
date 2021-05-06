@@ -339,10 +339,15 @@ button[type="submit"] {
   margin: 0 10rem;
 }
 
-.recipe h2 {
+.recipe h1 {
   font-size: 3rem;
   color: #707070;
   text-align: center;
+}
+
+.recipe p {
+  font-size: 1.3rem;
+  margin: 0 auto;
 }
 
 .recipe img {
