@@ -375,7 +375,7 @@ button[type="submit"] {
   grid-area: image;
 }
 
-.ingredcontainer ul {
+.ingredcontainer li {
   text-decoration: none;
 }
 
