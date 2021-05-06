@@ -25,7 +25,7 @@ const displayRecipe = (data) => {
   recipeOut.innerHTML = content;
   title.innerHTML = `StudentMat | ${data.title.rendered}`;
 
-  /* Test */
+  /* Separate ingredients and instructions in different containers */
   const ingredHeader = document.querySelector(
     ".recipecontainer h2:first-of-type"
   );
