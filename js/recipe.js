@@ -24,4 +24,10 @@ const displayRecipe = (data) => {
       `;
   recipeOut.innerHTML = content;
   title.innerHTML = `StudentMat | ${data.title.rendered}`;
+
+  /* Test */
+  const ingredHeader = document.querySelector(
+    ".recipedontainer h2:first-of-type"
+  );
+  console.log(ingredHeader);
 };
