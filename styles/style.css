@@ -390,7 +390,7 @@ button[type="submit"] {
 
 .instrcontainer li {
   margin: 0.4rem 0;
-  box-sizing: border-box;
+  margin-left: 13.3833;
 }
 
 .instrcontainer li:first-child {
