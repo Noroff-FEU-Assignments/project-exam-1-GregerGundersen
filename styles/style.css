@@ -336,7 +336,7 @@ button[type="submit"] {
 /* Specific Recipe Page */
 .recipe {
   /* display: grid; */
-  margin: 0 7.5rem;
+  margin: 0 10rem;
 }
 
 .recipe h1 {
