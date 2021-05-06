@@ -38,8 +38,6 @@ const displayRecipe = (data) => {
   ingredContainer.appendChild(ingredHeader);
   ingredContainer.appendChild(ingredList);
 
-  const instrHeader = document.querySelector(
-    ".recipecontainer h2:nth-of-type(2)"
-  );
+  const instrHeader = document.querySelector(".ingredcontainer + h2");
   console.log(instrHeader);
 };
