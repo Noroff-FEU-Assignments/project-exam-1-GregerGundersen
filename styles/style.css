@@ -335,5 +335,11 @@ button[type="submit"] {
 
 /* Specific Recipe Page */
 .recipe {
-  display: grid;
+  /* display: grid; */
+}
+
+.loadingcontainer {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
 }
