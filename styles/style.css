@@ -385,6 +385,10 @@ button[type="submit"] {
 }
 
 .instrcontainer li {
+  margin: 0.4rem 0;
+}
+
+.instrcontainer li:first-child {
   margin: 0.2rem 0;
 }
 
