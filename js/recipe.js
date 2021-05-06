@@ -36,5 +36,5 @@ const displayRecipe = (data) => {
   ingredContainer.classList.add("ingredcontainer");
   ingredHeader.parentNode.insertBefore(ingredContainer, ingredHeader);
   ingredContainer.appendChild(ingredHeader);
-  // ingredContainer.appendChild();
+  ingredContainer.appendChild(ingredList);
 };
