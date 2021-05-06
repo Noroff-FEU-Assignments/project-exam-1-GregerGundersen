@@ -30,7 +30,8 @@ const displayRecipe = (data) => {
     ".recipecontainer h2:first-of-type"
   );
 
-  const ingredContainer = document.createElement("div.ingredcontainer");
+  const ingredContainer = document.createElement("div");
+  ingredContainer.classList.add("ingredcontainer");
   ingredHeader.parentNode.insertBefore(ingredContainer, ingredHeader);
   ingredContainer.appendChild(ingredHeader);
 };
