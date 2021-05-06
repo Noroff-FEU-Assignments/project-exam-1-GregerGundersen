@@ -381,7 +381,11 @@ button[type="submit"] {
 }
 
 .ingredcontainer li {
-  padding: 0.2rem 0;
+  margin: 0.2rem 0;
+}
+
+.instrcontainer li {
+  margin: 0.2rem 0;
 }
 
 .ingredcontainer h2,
