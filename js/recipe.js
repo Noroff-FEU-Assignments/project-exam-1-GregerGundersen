@@ -30,7 +30,6 @@ const displayRecipe = (data) => {
     ".recipecontainer h2:first-of-type"
   );
   const ingredList = document.querySelector(".recipecontainer ul");
-  console.log(ingredList);
 
   const ingredContainer = document.createElement("div");
   ingredContainer.classList.add("ingredcontainer");
@@ -40,4 +39,6 @@ const displayRecipe = (data) => {
 
   const instrHeader = document.querySelector(".ingredcontainer + h2");
   console.log(instrHeader);
+  const instrList = document.querySelector(".recipecontainer ol");
+  console.log(instrList);
 };
