@@ -335,8 +335,22 @@ button[type="submit"] {
 
 /* Specific Recipe Page */
 .recipe {
-  /* display: grid; */
   margin: 0 10rem;
+}
+
+.recipecontainer {
+  display: grid;
+  grid-template-areas:
+    "image  image"
+    "ingred instr";
+}
+
+.ingredcontainer {
+  grid-area: ingred;
+}
+
+.instrcontainer {
+  grid-area: instr;
 }
 
 .recipe h1 {
@@ -354,4 +368,5 @@ button[type="submit"] {
 .recipe img {
   object-fit: cover;
   width: 100%;
+  grid-area: image;
 }
