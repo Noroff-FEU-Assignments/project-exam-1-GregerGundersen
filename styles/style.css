@@ -377,6 +377,10 @@ button[type="submit"] {
 
 .ingredcontainer ul {
   list-style-type: none;
+  padding: 0;
+}
+
+.ingredcontainer li {
   padding: 0.2rem 0;
 }
 
