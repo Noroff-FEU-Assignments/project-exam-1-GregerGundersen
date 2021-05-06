@@ -336,4 +336,10 @@ button[type="submit"] {
 /* Specific Recipe Page */
 .recipe {
   /* display: grid; */
+  margin: 0 10rem;
+}
+
+.recipe img {
+  object-fit: cover;
+  width: 100%;
 }
