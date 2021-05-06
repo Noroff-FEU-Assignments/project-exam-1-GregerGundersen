@@ -389,7 +389,7 @@ button[type="submit"] {
 }
 
 .instrcontainer li:first-child {
-  margin: 0.2rem 0;
+  margin-top: 0.2rem;
 }
 
 .ingredcontainer h2,
