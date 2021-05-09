@@ -9,7 +9,7 @@ body {
 }
 
 main {
-  margin: 0rem 10rem;
+  margin: 0rem 10%;
 }
 
 .loadingcontainer {
@@ -19,7 +19,7 @@ main {
 }
 
 .loadingindicator {
-  height: 15rem;
+  height: 200px;
 }
 
 /* Header */
@@ -29,8 +29,8 @@ header {
 }
 
 .headerlogo {
-  height: 3.5rem;
-  margin-left: 1rem;
+  height: 56px;
+  margin-left: 16px;
 }
 
 .logolink {
@@ -79,15 +79,15 @@ header {
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
 
-.recipeblock {
-  margin: 0.5rem 1rem;
-  max-width: 20rem;
+.recipelink {
+  transition: 0.1s;
 }
 
-/* .recipeblock h2 {
-  font-weight: 400;
-  font-size: 1rem;
-} */
+.recipelink:hover {
+  transform: scale(1.01);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 2%;
+}
 
 .recipelink h2,
 .recipelink {
@@ -103,7 +103,7 @@ header {
 }
 
 .recipeimagecontainer {
-  width: 200px;
+  width: 100%;
   height: 200px;
 }
 
@@ -120,6 +120,7 @@ footer {
   background-color: var(--maincolor);
   color: white;
   padding: 1rem;
+  margin-top: 1.5rem;
 }
 
 .footercontact {
@@ -353,6 +354,7 @@ button[type="submit"] {
 
 .instrcontainer {
   grid-area: instr;
+  max-width: 450px;
 }
 
 .recipe h1 {
