@@ -354,7 +354,7 @@ button[type="submit"] {
 
 .instrcontainer {
   grid-area: instr;
-  /* max-width: 600px; */
+  margin-left: 1rem;
 }
 
 .recipe h1 {
