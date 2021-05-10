@@ -56,10 +56,11 @@ const displayRecipe = (data) => {
   const modalImage = document.querySelector(".modalimage");
 
   const modalOpen = () => {
-    modal.style.display = "block";
-    modalImage.src = `${data._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url}`;
-    if ((modal.style.display = "block")) {
-      modalImage.hide();
+    if ((modal.style.display = "none")) {
+      modal.style.display = "block";
+      modalImage.src = `${data._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url}`;
+    } else {
+      modal.style.display = "none";
     }
   };
 
