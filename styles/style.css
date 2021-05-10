@@ -371,7 +371,7 @@ button[type="submit"] {
   grid-area: excrpt;
 }
 
-.recipe img {
+.rcpimg {
   object-fit: cover;
   width: 100%;
   grid-area: image;
