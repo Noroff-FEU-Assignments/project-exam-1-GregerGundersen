@@ -17,7 +17,10 @@ const displayRecipe = (data) => {
   console.log(data);
   let content = `
         <div class="recipecontainer">
-          <img src="${data._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url}" alt="${data._embedded["wp:featuredmedia"][0].alt_text}">
+          <img class="rcpimg" src="${data._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url}" alt="${data._embedded["wp:featuredmedia"][0].alt_text}">
+          <div class="modal">
+            <img class="modalimage">
+          </div>
           <h1>${data.title.rendered}</h1>
           ${data.excerpt.rendered}
           ${data.content.rendered}
@@ -47,4 +50,15 @@ const displayRecipe = (data) => {
   instrHeader.parentNode.insertBefore(instrContainer, instrHeader);
   instrContainer.appendChild(instrHeader);
   instrContainer.appendChild(instrList);
+
+  const modal = document.querySelector(".modal");
+  const imageSource = document.querySelector(".rcpimg");
+  const modalImage = document.querySelector(".modalimage");
+
+  const modalOpen = () => {
+    modal.style.display = "block";
+    modalImage.src = this.src;
+  };
+
+  imageSource.addEventListener("click", modalOpen);
 };
