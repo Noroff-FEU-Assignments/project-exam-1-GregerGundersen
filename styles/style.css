@@ -357,6 +357,10 @@ button[type="submit"] {
   margin-left: 1.5rem;
 }
 
+.instrcontainer h1 {
+  width: 200px;
+}
+
 .recipe h1 {
   font-size: 3rem;
   font-weight: 300;
