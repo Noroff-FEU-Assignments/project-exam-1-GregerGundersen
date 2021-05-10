@@ -19,6 +19,7 @@ const displayRecipe = (data) => {
         <div class="recipecontainer">
           <img class="rcpimg" src="${data._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url}" alt="${data._embedded["wp:featuredmedia"][0].alt_text}">
           <div class="modal">
+            <i class="far fa-times-circle"></i>
             <img class="modalimage">
           </div>
           <h1>${data.title.rendered}</h1>
@@ -54,15 +55,17 @@ const displayRecipe = (data) => {
   const modal = document.querySelector(".modal");
   const imageSource = document.querySelector(".rcpimg");
   const modalImage = document.querySelector(".modalimage");
+  const closeBtn = document.querySelector(".fa-times-circle");
 
   const modalOpen = () => {
-    if ((modal.style.display = "none")) {
-      modal.style.display = "block";
-      modalImage.src = `${data._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url}`;
-    } else {
-      modal.style.display = "none";
-    }
+    modal.style.display = "block";
+    modalImage.src = `${data._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url}`;
   };
 
+  const modalClose = () => {
+    modal.style.display = "none";
+  };
+
+  closeBtn.addEventListener("click", modalClose);
   imageSource.addEventListener("click", modalOpen);
 };
