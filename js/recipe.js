@@ -58,6 +58,9 @@ const displayRecipe = (data) => {
   const modalOpen = () => {
     modal.style.display = "block";
     modalImage.src = `${data._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url}`;
+    if ((modal.style.display = "block")) {
+      modalImage.hide();
+    }
   };
 
   imageSource.addEventListener("click", modalOpen);
