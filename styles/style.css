@@ -455,3 +455,8 @@ button[type="submit"] {
   font-weight: bold;
   transition: 0.3s;
 }
+
+.fa-times-circle:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+}
