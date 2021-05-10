@@ -430,9 +430,10 @@ button[type="submit"] {
   display: block;
   width: 80%;
   max-width: 700px;
+  margin-bottom: 30px;
 }
 
-.modal-content {
+.modalimage {
   animation-name: zoom;
   animation-duration: 0.6s;
 }
