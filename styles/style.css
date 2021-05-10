@@ -434,7 +434,7 @@ button[type="submit"] {
 
 .modalimage {
   animation-name: zoom;
-  animation-duration: 0.6s;
+  animation-duration: 0.4s;
 }
 
 @keyframes zoom {
@@ -445,16 +445,6 @@ button[type="submit"] {
     transform: scale(1);
   }
 }
-
-@keyframes zoom {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(0);
-  }
-}
-
 .fa-times-circle {
   position: absolute;
   top: 15px;
