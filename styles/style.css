@@ -73,27 +73,50 @@ header {
 /* Home Page */
 #home {
   padding: 0;
-  margin: 0;
+  margin: 0 10%;
   box-sizing: border-box;
 }
 
-#home h1 {
-  text-align: center;
+#home h2 {
   font-size: 3rem;
   font-weight: 300;
   color: #707070;
+  margin-bottom: 5px;
+  margin-top: 20px;
 }
 
 #home p {
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
+  /* max-width: 700px; */
   font-size: 1.3rem;
   line-height: 2rem;
+  margin-top: 5px;
+  margin-bottom: 50px;
+}
+
+.headerimg {
+  width: 100%;
+  height: 500px;
+  margin: auto;
+  display: block;
+  position: relative;
+}
+
+.headerimg h1 {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  color: white;
+  font-size: 60px;
+}
+
+.headerimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .carouseltwocontainer {
-  width: 80%;
+  width: 100%;
   margin: auto;
   position: relative;
 }
@@ -104,12 +127,16 @@ header {
   grid-template-columns: repeat(4, 1fr);
   margin: auto;
   grid-gap: 15px;
-  padding: 15px;
-  border: 1px solid black;
 }
 
-.carouselLink {
-  overflow: hidden;
+.carouselcontainer {
+  position: relative;
+}
+
+.carousellink {
+  /* overflow: hidden; */
+  text-decoration: none;
+  /* position: absolute; */
 }
 
 .carousellink img {
@@ -119,13 +146,25 @@ header {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+.carousellink h3 {
+  color: white;
+  position: absolute;
+  bottom: 2%;
+  font-size: 15px;
+  font-weight: 400;
+  margin: 0;
+  max-width: 280px;
+  background-color: rgb(0, 0, 0, 0.35);
+  display: block;
+}
+
 .fa-arrow-circle-right {
   position: absolute;
   z-index: 1;
-  top: 45%;
+  top: 40%;
   right: 0%;
   font-size: 30px;
-  color: white;
+  color: #707070;
   padding: 10px;
   border-radius: 100%;
 }
@@ -133,10 +172,10 @@ header {
 .fa-arrow-circle-left {
   position: absolute;
   z-index: 1;
-  top: 45%;
+  top: 40%;
   left: 0%;
   font-size: 30px;
-  color: white;
+  color: #707070;
   padding: 10px;
   border-radius: 100%;
 }
@@ -144,7 +183,7 @@ header {
 .fa-arrow-circle-left:hover,
 .fa-arrow-circle-right:hover {
   cursor: pointer;
-  background: rgb(0, 0, 0, 0.7);
+  background: rgba(221, 221, 221, 0.7);
 }
 
 /* Recipes */
@@ -188,8 +227,28 @@ header {
   object-fit: cover;
 }
 
+.buttoncontainer {
+  margin: 0 auto;
+  width: 300px;
+  display: flex;
+}
+
 button[name="loadmore"] {
-  margin: auto;
+  border-radius: none;
+  color: white;
+  background: var(--maincolor);
+  border: none;
+  font-size: 20px;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+
+button[name="loadmore"]:hover {
+  transform: scale(1.03);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 /* Footer */
@@ -351,8 +410,10 @@ footer p {
 }
 
 #contact {
-  max-width: 1000px;
-  margin: 0 25rem 2rem 25rem;
+  width: 50%;
+  margin: 0 auto;
+  /* max-width: 1000px;
+  margin: 0 25rem 2rem 25rem; */
   /* border: 0.5px solid #707070; */
 }
 
@@ -383,7 +444,8 @@ input[type="email"],
 #contactform textarea {
   box-sizing: border-box;
   padding: 0.2rem;
-  width: 24.5rem;
+  width: 80%;
+  /* width: 24.5rem; */
   margin: 0.8rem 0 0.2rem 0;
 }
 
@@ -400,12 +462,19 @@ input[type="email"],
 }
 
 button[type="submit"] {
-  margin: 0.2rem 0;
+  margin: 0.3rem 0;
   background: var(--maincolor);
   color: white;
   border: none;
   padding: 0.5rem 1rem;
   font-size: 1.5rem;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+
+button[type="submit"]:hover {
+  transform: scale(1.03);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 #message {
