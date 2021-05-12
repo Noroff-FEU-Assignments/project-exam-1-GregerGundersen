@@ -16,6 +16,7 @@
       rel="stylesheet"
     />
   </head>
+
   <body>
     <header>
       <div class="headerleft">
@@ -38,11 +39,17 @@
         ></a>
       </div>
     </header>
-    <main>
-      <div class="recipes">
-        <div class="loadingcontainer">
-          <img class="loadingindicator" src="./media/ringssvgloader.svg" />
-        </div>
+    <main id="home">
+      <h1>Velkommen til StudentMat</h1>
+      <p>
+        På denne siden kan du finne oppskrifter som er tar kort tid, er lette å
+        lage og ikke koster skjorta. Vårt mål er å lære deg mer om mat, næring
+        og sunn livsstil.
+      </p>
+      <div class="carouseltwocontainer">
+        <i onclick="carouselLeft()" class="fas fa-arrow-circle-left"></i>
+        <i onclick="carouselRight()" class="fas fa-arrow-circle-right"></i>
+        <div class="carouseltwo"></div>
       </div>
     </main>
     <div class="footerwrapper">
@@ -53,7 +60,7 @@
           <p>Skriv til oss via kontaktskjemaet på siden.</p>
         </div>
         <div class="footerlogo">
-          <img src="media/PSLogoFooter.png" class="footerlogo" />
+          <img src="media/PSLogoFooter.png" alt="logo" class="footerlogo" />
         </div>
         <div class="footersocial">
           <i class="fab fa-facebook"></i>

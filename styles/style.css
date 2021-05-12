@@ -71,6 +71,81 @@ header {
   border-bottom: 1px solid var(--maincolor);
 }
 /* Home Page */
+#home {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#home h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 300;
+  color: #707070;
+}
+
+#home p {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+
+.carouseltwocontainer {
+  width: 80%;
+  margin: auto;
+  position: relative;
+}
+
+.carouseltwo {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: auto;
+  grid-gap: 15px;
+  padding: 15px;
+  border: 1px solid black;
+}
+
+.carouselLink {
+  overflow: hidden;
+}
+
+.carousellink img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.fa-arrow-circle-right {
+  position: absolute;
+  z-index: 1;
+  top: 45%;
+  right: 0%;
+  font-size: 30px;
+  color: white;
+  padding: 10px;
+  border-radius: 100%;
+}
+
+.fa-arrow-circle-left {
+  position: absolute;
+  z-index: 1;
+  top: 45%;
+  left: 0%;
+  font-size: 30px;
+  color: white;
+  padding: 10px;
+  border-radius: 100%;
+}
+
+.fa-arrow-circle-left:hover,
+.fa-arrow-circle-right:hover {
+  cursor: pointer;
+  background: rgb(0, 0, 0, 0.7);
+}
 
 /* Recipes */
 .recipes {
@@ -111,6 +186,10 @@ header {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+button[name="loadmore"] {
+  margin: auto;
 }
 
 /* Footer */
@@ -246,7 +325,7 @@ footer p {
   margin: 0 10%;
 }
 
-#about h2 {
+#about h1 {
   text-align: center;
   font-size: 3rem;
   font-weight: 300;
@@ -284,7 +363,7 @@ footer p {
   transition-duration: 0.25s;
 }
 
-#contact h2 {
+#contact h1 {
   text-align: center;
   font-size: 3rem;
   font-weight: 300;
