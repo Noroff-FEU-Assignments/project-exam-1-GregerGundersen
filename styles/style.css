@@ -70,6 +70,36 @@ header {
 .active {
   border-bottom: 1px solid var(--maincolor);
 }
+
+#hamburgermenu {
+  display: none;
+  font-size: 35px;
+  align-self: center;
+  margin-right: 10px;
+}
+
+/* Navigation Media Queries */
+@media screen and (max-width: 720px) {
+  .navbar a {
+    display: none;
+  }
+
+  .navbar {
+    margin-bottom: 0;
+  }
+
+  #hamburgermenu {
+    display: inline;
+  }
+}
+
+/* @media screen and (min-width: 720px) {
+  #hamburgermenu {
+    display: none;
+  }
+
+} */
+
 /* Home Page */
 #home {
   padding: 0;
@@ -186,6 +216,14 @@ header {
   background: rgba(221, 221, 221, 0.7);
 }
 
+/* Home media queries */
+
+@media screen and (max-width: 720px) {
+  .carouseltwo {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 /* Recipes */
 .recipes {
   display: grid;
@@ -228,13 +266,11 @@ header {
 }
 
 .buttoncontainer {
-  margin: 0 auto;
-  width: 300px;
   display: flex;
+  justify-content: center;
 }
 
 button[name="loadmore"] {
-  border-radius: none;
   color: white;
   background: var(--maincolor);
   border: none;
@@ -244,6 +280,7 @@ button[name="loadmore"] {
   margin-top: 30px;
   cursor: pointer;
   transition: 0.4s ease-in-out;
+  margin: 0 auto;
 }
 
 button[name="loadmore"]:hover {
@@ -377,11 +414,52 @@ footer p {
   background-position: right center;
   transform: scale(1.08);
 }
+
+/* Footer media queries */
+
+@media screen and (max-width: 720px) {
+  footer {
+    grid-template-areas:
+      "flogo"
+      "fsocial"
+      "fcontact";
+    justify-content: center;
+    grid-template-columns: none;
+    padding: 0;
+  }
+  .footersocial {
+    border: none;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    grid-area: fsocial;
+  }
+  .footercontact {
+    border: none;
+    margin-bottom: 20px;
+    grid-area: fcontact;
+  }
+  .footerlogo {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    grid-area: flogo;
+  }
+}
+
 /* About page */
 
 #about {
-  max-width: 1000px;
   margin: 0 10%;
+}
+
+.abouthdr {
+  width: 100%;
+  margin: auto;
+}
+
+.abouthdr img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
 }
 
 #about h1 {
@@ -392,9 +470,6 @@ footer p {
 }
 
 #about p {
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
   font-size: 1.3rem;
   line-height: 2rem;
 }

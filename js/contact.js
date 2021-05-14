@@ -26,7 +26,8 @@ function formValidator(form) {
   /* Trim whitespace and check against email regex */
   const trimmedEmail = email.value.trim();
   emailErr.innerHTML = "";
-  const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  const emailRegex =
+    /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   if (!emailRegex.test(trimmedEmail)) {
     emailErr.innerHTML +=
       '<i class="fas fa-exclamation-circle"></i> Skriv inn en gyldig e-post adresse';
@@ -52,7 +53,7 @@ function formValidator(form) {
     subjectErr.innerHTML === "" &&
     messageErr.innerHTML === ""
   ) {
-    form.submit();
+    contactForm.submit();
     console.log("Submitted");
   }
 }

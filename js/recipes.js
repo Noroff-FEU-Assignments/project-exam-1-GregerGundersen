@@ -32,8 +32,8 @@ function displayMedia(recipes) {
 
 /* Load more posts */
 const loadMoreBtn = document.querySelector('button[name="loadmore"]');
-const loadMoreUrl =
-  "https://dionysus.no/projectexam/wp-json/wp/v2/posts/?_embed=wp:featuredmedia&page=2";
+let pageCounter = 1;
+let loadMoreUrl = `https://dionysus.no/projectexam/wp-json/wp/v2/posts/?_embed=wp:featuredmedia&page=${pageCounter}`;
 
 function displayMoreMedia(recipes) {
   for (let recipe of recipes) {
@@ -56,11 +56,19 @@ function displayMoreMedia(recipes) {
   }
 }
 
+const lastPage = () => {
+  loadMoreBtn.innerHTML = "Siste side";
+  loadMoreBtn.disabled = true;
+};
+
 const loadPosts = () => {
+  pageCounter++;
+  loadMoreUrl = `https://dionysus.no/projectexam/wp-json/wp/v2/posts/?_embed=wp:featuredmedia&page=${pageCounter}`;
+  console.log(loadMoreUrl);
   fetch(loadMoreUrl)
     .then((response) => response.json())
     .then((data) => displayMoreMedia(data))
-    .catch((error) => console.error("Error: " + error));
+    .catch((error) => lastPage());
 };
 
 loadMoreBtn.addEventListener("click", loadPosts);
