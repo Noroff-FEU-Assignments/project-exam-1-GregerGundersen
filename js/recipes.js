@@ -73,11 +73,14 @@ const loadPosts = () => {
 
 loadMoreBtn.addEventListener("click", loadPosts);
 
-/* Recipe Styling */
-// const recipeLink = document.querySelector(".recipelink");
-// console.log(recipeLink);
-// const recipeHeader = document.querySelector(".recipeheader");
-// const headerColor = () => {
-//   recipeHeader.style.color = "var(--maincolor)";
+/* Categories */
+// const ctgMiddag = document.querySelector("#middag");
+
+// const checkbox = () => {
+//   if (ctgMiddag.checked === true) {
+//     console.log("Checked");
+//   } else {
+//     console.log("Unchecked");
+//   }
 // };
-// recipeLink.addEventListener("mouseover", headerColor);
+// ctgMiddag.addEventListener("change", checkbox());

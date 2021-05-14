@@ -289,13 +289,16 @@ button[name="loadmore"]:hover {
 }
 
 /* Footer */
+.footerwrapper {
+  margin-top: 4rem;
+}
+
 footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   background-color: var(--maincolor);
   color: white;
   padding: 1rem;
-  margin-top: 1.5rem;
 }
 
 .footercontact {
