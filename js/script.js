@@ -4,20 +4,6 @@ let counter = 1;
 let carouselUrl = `https://dionysus.no/projectexam/wp-json/wp/v2/posts/?_embed=wp:featuredmedia&per_page=4&page=${counter}`;
 let headerUrl = `https://dionysus.no/projectexam/wp-json/wp/v2/posts/?_embed=wp:featuredmedia&per_page=4&page=1`;
 
-// const hamburger = document.querySelector(".fa-bars");
-// const mobilenav = document.querySelector(".mobilenav");
-
-// const mobilemenu = () => {
-//   if ((mobilenav.style.display = "none")) {
-//     mobilenav.style.display = "block";
-//     mobilenav.style.overflow = "hidden";
-//     console.log("click");
-//   } else if ((mobilenav.style.display = "block")) {
-//     mobilenav.style.display = "none";
-//   }
-// };
-// hamburger.addEventListener("click", mobilemenu());
-
 fetch(carouselUrl)
   .then((response) => response.json())
   .then((data) => displayCarousel(data))
@@ -56,7 +42,10 @@ const displayHeader = (recipes) => {
                           <img src="${recipes[1]._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url}">
                           <h1>${recipes[1].title.rendered}</h1>
                           `;
-  headerImage.setAttribute("href", `${recipes[1].link}`);
+  headerImage.setAttribute(
+    "href",
+    `https://projectexam.netlify.app/recipe.html/?id=${id}`
+  );
 };
 const nextBtn = document.querySelector(".fa-arrow-circle-right");
 const prevBtn = document.querySelector(".fa-arrow-circle-left");
