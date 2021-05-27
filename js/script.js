@@ -44,7 +44,7 @@ const displayHeader = (recipes) => {
                           `;
   headerImage.setAttribute(
     "href",
-    `https://projectexam.netlify.app/recipe.html/?id=${id}`
+    `https://projectexam.netlify.app/recipe.html/?id=${recipes[1].id}`
   );
 };
 const nextBtn = document.querySelector(".fa-arrow-circle-right");
