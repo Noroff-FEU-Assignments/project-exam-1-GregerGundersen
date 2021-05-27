@@ -45,6 +45,7 @@ header {
 
 .navbar {
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 1rem;
 }
 
@@ -71,34 +72,17 @@ header {
   border-bottom: 1px solid var(--maincolor);
 }
 
-#hamburgermenu {
-  display: none;
-  font-size: 35px;
-  align-self: center;
-  margin-right: 10px;
-}
-
-/* Navigation Media Queries */
-@media screen and (max-width: 720px) {
-  .navbar a {
-    display: none;
-  }
-
+@media screen and (max-width: 710px) {
   .navbar {
-    margin-bottom: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  #hamburgermenu {
-    display: inline;
+  .navbar a {
+    text-align: center;
+    padding: 1.2rem;
   }
 }
-
-/* @media screen and (min-width: 720px) {
-  #hamburgermenu {
-    display: none;
-  }
-
-} */
 
 /* Home Page */
 #home {

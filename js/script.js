@@ -1,9 +1,22 @@
 const carouselTwo = document.querySelector(".carouseltwo");
 const headerImage = document.querySelector(".headerimg");
-
 let counter = 1;
 let carouselUrl = `https://dionysus.no/projectexam/wp-json/wp/v2/posts/?_embed=wp:featuredmedia&per_page=4&page=${counter}`;
 let headerUrl = `https://dionysus.no/projectexam/wp-json/wp/v2/posts/?_embed=wp:featuredmedia&per_page=4&page=1`;
+
+// const hamburger = document.querySelector(".fa-bars");
+// const mobilenav = document.querySelector(".mobilenav");
+
+// const mobilemenu = () => {
+//   if ((mobilenav.style.display = "none")) {
+//     mobilenav.style.display = "block";
+//     mobilenav.style.overflow = "hidden";
+//     console.log("click");
+//   } else if ((mobilenav.style.display = "block")) {
+//     mobilenav.style.display = "none";
+//   }
+// };
+// hamburger.addEventListener("click", mobilemenu());
 
 fetch(carouselUrl)
   .then((response) => response.json())
